@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+PECL_NAME_OVERRIDE :=phalcon5
+PHP_DEFAULT_VERSION_OVERRIDE := 7.4
+include /usr/share/dh-php/pkg-pecl.mk
+
+export DEB_CPPFLAGS_MAINT_APPEND = -DPHALCON_RELEASE
+export DEB_CFLAGS_MAINT_APPEND = -Wall
+
+build-%:
+	mkdir -p build-$(*)

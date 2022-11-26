@@ -1,0 +1,3 @@
+version=3
+https://pecl.php.net/package/phalcon \
+  /get/phalcon-([\d\.]*).tgz  debian  uupdate

@@ -1,0 +1,6 @@
+php-phalcon5 (5.1.1-0~bpo11+1) bullseye-backports; urgency=medium
+
+  * Initial release with 5.1.1 upstream
+
+ -- Jan Wagner <waja@cyconet.org>  Sat, 26 Nov 2022 14:40:52 +0000
+
