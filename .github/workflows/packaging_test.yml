@@ -30,6 +30,7 @@ jobs:
       uses: dawidd6/action-debian-package@v1.4.4
       with:
         artifacts_directory: debian/build/release/
+        lintian_run: true
     - name: Debug
       run: |
         ls -la
