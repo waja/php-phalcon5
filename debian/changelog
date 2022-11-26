@@ -1,3 +1,10 @@
+php-phalcon5 (5.1.1-1~bpo11+1) bullseye-backports; urgency=medium
+
+  * [44ad153] Adding Github CI pipelines
+  * [c54328b] Downgrade dh-php build-dep to >= 0.35~ so we can build on bullseye
+
+ -- Jan Wagner <waja@cyconet.org>  Sat, 26 Nov 2022 16:43:34 +0000
+
 php-phalcon5 (5.1.1-0~bpo11+1) bullseye-backports; urgency=medium
 
   * Initial release with 5.1.1 upstream
