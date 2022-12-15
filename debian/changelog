@@ -1,3 +1,11 @@
+php-phalcon5 (5.1.2-1) bullseye-backports; urgency=medium
+
+  * [ba21b14] d/gbp-conf: debian-branch is master
+  * [93ef7f6] d/gbp.conf: set merge-mode to merge
+  * [3fedbe9] New upstream version 5.1.2
+
+ -- Jan Wagner <waja@cyconet.org>  Thu, 15 Dec 2022 14:42:31 +0000
+
 php-phalcon5 (5.1.1-1~bpo11+1) bullseye-backports; urgency=medium
 
   * [44ad153] Adding Github CI pipelines
