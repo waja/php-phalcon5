@@ -1,8 +1,8 @@
-php-phalcon5 (5.1.2-2) UNRELEASED; urgency=medium
+php-phalcon5 (5.1.3-1) bullseye-backports; urgency=medium
 
-  * 
+  * [9be0a65] New upstream version 5.1.3
 
- -- Jan Wagner <waja@cyconet.org>  Thu, 15 Dec 2022 15:30:33 +0000
+ -- Jan Wagner <waja@cyconet.org>  Thu, 29 Dec 2022 17:02:46 +0000
 
 php-phalcon5 (5.1.2-1) bullseye-backports; urgency=medium
 
