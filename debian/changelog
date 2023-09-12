@@ -1,8 +1,9 @@
-php-phalcon5 (5.3.0-2) UNRELEASED; urgency=medium
+php-phalcon5 (5.3.1-1) bullseye-backports; urgency=medium
 
-  *  
+  * [6e51e92] Bump actions/checkout from 3 to 4
+  * [94092b2] New upstream version 5.3.1
 
- -- Jan Wagner <waja@cyconet.org>  Mon, 04 Sep 2023 21:32:29 +0200
+ -- Jan Wagner <waja@cyconet.org>  Tue, 12 Sep 2023 13:31:12 +0000
 
 php-phalcon5 (5.3.0-1) bullseye-backports; urgency=medium
 
