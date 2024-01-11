@@ -1,3 +1,15 @@
+php-phalcon5 (5.5.0-1~bpo12+1) bookworm-backports; urgency=medium
+
+  [ Jan Wagner ]
+  * Build for bookworm-backports.
+  * [bc3cba5] Build against php 8.2
+  * [604a769] Update to dh-php (>= 5~)
+
+  [ dependabot[bot] ]
+  * [27511da] Bump dawidd6/action-debian-package from 1.5.0 to 1.6.0
+
+ -- Jan Wagner <waja@cyconet.org>  Thu, 11 Jan 2024 13:26:09 +0100
+
 php-phalcon5 (5.5.0-1) bullseye-backports; urgency=medium
 
   * [ce38897] New upstream version 5.5.0
