@@ -55,7 +55,7 @@ Description: full-stack PHP framework delivered as a C-extension
  whenever it's needed, without expensive file stats and file reads that
  traditional PHP frameworks employ.
 
-Package: php7.4-phalcon5
+Package: php8.2-phalcon5
 Architecture: any
 Pre-Depends: php-common (>= 2:69~)
 Depends: ${misc:Depends},
