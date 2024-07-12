@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.10.14" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.10.15" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>phalcon</name>
  <channel>pecl.php.net</channel>
  <summary>Phalcon is a full stack PHP framework offering low resource consumption and high performance.</summary>
@@ -18,11 +18,11 @@
   <email>nikos@phalcon.io</email>
   <active>yes</active>
  </lead>
- <date>2023-12-25</date>
- <time>18:05:53</time>
+ <date>2024-07-09</date>
+ <time>21:16:05</time>
  <version>
-  <release>5.5.0</release>
-  <api>5.5.0</api>
+  <release>5.8.0</release>
+  <api>5.8.0</api>
  </version>
  <stability>
   <release>stable</release>
@@ -34,29 +34,40 @@ Full changelog can be found at: https://github.com/phalcon/cphalcon/blob/master/
 
 ### Changed
 
-- Shifted minimal support from PHP 7.4 to PHP 8.0 [#16477](https://github.com/phalcon/cphalcon/issues/16477)
-- Changed `Phalcon\Mvc\Model::toArray` to use getters if present [#16320](https://github.com/phalcon/cphalcon/issues/16320)
-- Adjusted return types identical to original interface `int|false` in `Phalcon\Session\Adapter\*::gc()` [#16477](https://github.com/phalcon/cphalcon/issues/16477)
-- Changed return type of `Phalcon\Config\Adapter\Ini::cast()` to `mixed` [#16477](https://github.com/phalcon/cphalcon/issues/16477)
+- Changed `Phalcon\Mvc\Model`, `Phalcon\Support\Collection` and `Phalcon\Support\Registry` to correctly implement   `\Serializable` interface. [#16591](https://github.com/phalcon/cphalcon/issues/16591)
+- Changed the `Phalcon\Mvc\Router\Group::getHostname()` to return `null` also. [#16601](https://github.com/phalcon/cphalcon/issues/16601)
+- Changed `Phalcon\Mvc\View\Engine\Volt\Compiler::compileSource` to also return `array` [#16608](https://github.com/phalcon/cphalcon/issues/16608)
 
 ### Added
 
-- Added support for PHP 8.3 [#16477](https://github.com/phalcon/cphalcon/issues/16477)
+- Added events and `Phalcon\Events\Manager` for `Phalcon\Storage\Adapter\Apcu`,
+  `Phalcon\Storage\Adapter\Redis`,
+  `Phalcon\Storage\Adapter\Memory`,
+  `Phalcon\Storage\Adapter\Libmemcached`,
+  `Phalcon\Storage\Adapter\Stream`,
+  `Phalcon\Storage\Adapter\Weak`,
+  `Phalcon\Cache\Adapter\Apcu`,
+  `Phalcon\Cache\Adapter\Redis`,
+  `Phalcon\Cache\Adapter\Memory`,
+  `Phalcon\Cache\Adapter\Libmemcached`,
+  `Phalcon\Cache\Adapter\Stream`,
+  `Phalcon\Cache\Adapter\Weak`
+  `Phalcon\Cache\AbstractCache`. [#16606](https://github.com/phalcon/cphalcon/issues/16606)
 
 ### Fixed
 
-- Fixed `Phalcon\Filter\Validation\Validator\Numericality` to return false when input has spaces [#16461](https://github.com/phalcon/cphalcon/issues/16461)
-- Fixed `Phalcon\Mvc\Model\ResultsetSimple::toArray` to ignore numeric indexes in case results come as not `fetch_assoc` [#16467](https://github.com/phalcon/cphalcon/issues/16467)
+- Fixed `Phalcon\Support\Helper\PascalCase` causing memory leak by anonymous function [#16593](https://github.com/phalcon/cphalcon/issues/16593)
+- Fixed `Phalcon\Mvc\Model\Query` to rollback failed transactions and re-throw exception for data consistency [#16604](https://github.com/phalcon/cphalcon/issues/16604)
  </notes>
  <contents>
   <dir name="/">
    <file md5sum="605b108f1e0f081d2175d4648254d104" name="config.m4" role="src" />
    <file md5sum="30ca2ce4562668288e9c867ee30002c7" name="config.w32" role="src" />
-   <file md5sum="42242f9a86cba6020488eeefc791c3ba" name="phalcon.zep.c" role="src" />
-   <file md5sum="b65451b00972436c2cff0349a6fccba2" name="phalcon.zep.h" role="src" />
-   <file md5sum="cc1952dcf3c12acff3a72c28d4b4cd05" name="php_phalcon.h" role="src" />
+   <file md5sum="90aa9e2cf381a8dfccf037860f0468b2" name="phalcon.zep.c" role="src" />
+   <file md5sum="1f4fd257f356d4940787ab00bef71e51" name="phalcon.zep.h" role="src" />
+   <file md5sum="9fe9346da8eaf2fe62b92916f6af07f5" name="php_phalcon.h" role="src" />
    <file md5sum="d203bdf1a0b2d361f36cd0e0d9c23c74" name="LICENSE.txt" role="doc" />
-   <file md5sum="f2775e159c3c37bafd5a748678af63a2" name="CHANGELOG-5.0.md" role="doc" />
+   <file md5sum="83eacf2128f5a0300a4e7db02e2a6e91" name="CHANGELOG-5.0.md" role="doc" />
    <file md5sum="3e5802d234e4311b08b1e73df07eb5fc" name="CODE_OF_CONDUCT.md" role="doc" />
    <file md5sum="67bdb8625f7e41763bd695117f7f38f1" name="CODE_OWNERS.TXT" role="doc" />
   </dir>
