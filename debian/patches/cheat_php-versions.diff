@@ -1,0 +1,13 @@
+Index: php-phalcon5/package.xml
+===================================================================
+--- php-phalcon5.orig/package.xml
++++ php-phalcon5/package.xml
+@@ -66,7 +66,7 @@ Full changelog can be found at: https://
+   <required>
+    <php>
+     <min>7.4.1</min>
+-    <max>8.2.99</max>
++    <max>8.3.99</max>
+    </php>
+    <pearinstaller>
+     <min>1.10</min>
