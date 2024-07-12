@@ -1,3 +1,9 @@
+php-phalcon5 (5.8.0-1~bpo12+1) bookworm-backports; urgency=medium
+
+  * Build for bookworm-backports.
+
+ -- Jan Wagner <waja@cyconet.org>  Fri, 12 Jul 2024 08:03:03 +0200
+
 php-phalcon5 (5.8.0-1) bullseye-backports; urgency=medium
 
   * [57d63f5] New upstream version 5.8.0
